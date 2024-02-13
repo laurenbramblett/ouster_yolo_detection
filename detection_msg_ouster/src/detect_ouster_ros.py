@@ -1,0 +1,1 @@
+/home/administrator/Projects/yolo_spot/yolo_ws/src/yolov5_ouster/detect_ouster_ros.py

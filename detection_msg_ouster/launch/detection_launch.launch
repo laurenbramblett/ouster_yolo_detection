@@ -1,0 +1,16 @@
+<launch>
+
+    <!-- Detection configuration -->
+    <arg name="weights" default="best.onnx" />
+    <arg name="confidence_threshold" default="0.75" />
+
+    <!-- replace imgsz -->
+    <arg name="inference_size" default="640" />
+
+    <!-- Visualize using OpenCV window -->
+    <arg name="view_image" default="True" />
+
+    <node name="detection_node" pkg="detection_msgs" type="detect_ouster_ros.py" output="screen"/>
+
+    <node name="detection_publisher_node" pkg="detection_msgs" type="server.py" output="screen"/>
+</launch>
