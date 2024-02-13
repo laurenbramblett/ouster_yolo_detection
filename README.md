@@ -13,6 +13,9 @@ This was built to run with a specific local python executable. Please fix the sh
 ```
 roslaunch detection_msgs detection_launch.launch
 ```
-Note: Source the 
+
 If you need to change the parameters such as confidence_threshold or whether you want to view the opencv image, change them in `yolov5_ouster/detect_ouster_ros.py`
+
+
+
 TODO: fix arguments in launch file
